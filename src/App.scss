@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Header{
+    background-color: #FFE793;
+    height: 64px;
+    img{
+        width: 50px;
+        height: 40px;
+        margin: 10px 7px;
+    }
+}
+
+.Example{
+    text-align: center;
+}
+.Main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    :link{
+        text-decoration: none;
+    }
+    
+    .Pokemon{
+        margin: 10px 20px;
+        border: 1px solid steelblue;
+        width: 200px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        overflow: hidden;
+        
+
+        img{
+            width: 100%;
+        }
+        span{
+            background-color: rgba(0,0,0,.5);
+            width: 100%;
+            text-align: center;
+            color: aliceblue;
+        }
+    }
+    .Pokemon:hover{
+        box-shadow: 3px 3px 15px gray;
+        transform: scale(1.01);
+    }
+
+}
+
+.Species{    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 500px;
+    position: absolute;
+
+    .PokemonInfo{
+        height: 500px;
+        width: 500px;  
+        text-align: center;
+        background-color: rgb(156, 166, 223);
+        border-radius: 10px;
+        box-shadow: 3px 3px 15px gray;
+        overflow: hidden;
+        position: relative;
+        background-image: linear-gradient(-90deg, green, yellow);
+        font-size: 18px;
+        
+        .NameInfo{
+            background-color: green;
+            color: antiquewhite;
+            margin-bottom: 10px;
+        }
+
+        .NumberrInfo{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10px;
+
+            .poison{
+                background-color: #923A92;
+                border-radius: 3px;
+                box-shadow: 3px 3px 15px gray;
+                padding: 3px;
+            }
+            .grass{
+                border-radius: 3px;
+                box-shadow: 3px 3px 15px gray;
+                padding: 3px;
+                background-color:#69C23D;
+            }
+            .infoText{
+                text-transform: uppercase;
+            }
+        }
+
+        img{
+            background-color: #00000061;
+            border-radius: 50%;
+            box-shadow: 7px 6px 17px 2px;
+        }
+
+        .pokemonspecies{
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
